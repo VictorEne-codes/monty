@@ -31,6 +31,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
+void swap(stack_t **node_stack, unsigned int l_num);
+void add(stack_t **node_stack, unsigned int l_num);
 
 #endif
