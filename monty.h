@@ -45,6 +45,18 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+
+/**
+ * struct glob_var - golbal variables
+ * @file: file name
+ * @buff: Getline buffer
+ * @tmp: Getline counter
+ * @dict: instruction dictionary
+ * @head: pointer to list
+ * @line_number: Stores file current line
+ * @MODE: Program configuration stack or queue
+ */
+
 typedef struct glob_var
 {
 	FILE *file;
