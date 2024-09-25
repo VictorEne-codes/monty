@@ -1,6 +1,6 @@
-#include <monty.h>
+#include "monty.h"
 
-/*
+/**
  * swap - a function that sqaps the two top elenets in the stack
  * @node_stack: input
  * @l_num:  input

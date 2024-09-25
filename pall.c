@@ -1,9 +1,13 @@
 #include "monty.h"
+
 /**
  * pall - Print all element in list
- * @node_stack: Doubly linked list
+ * @node_stack: input
  * @l_num: input
+ *
+ * Return: void
  */
+
 void pall(stack_t **node_stack, unsigned int l_num)
 {
 	stack_t *tmp = *node_stack;

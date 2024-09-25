@@ -1,9 +1,13 @@
 #include "monty.h"
+
 /**
  * push - entry point inserts a new value in list
- * @node_stack: doubly linked list
+ * @node_stack: input
  * @l_num: input
+ *
+ * Return: void
  */
+
 void push(stack_t **node_stack, unsigned int l_num)
 {
 	stack_t *tmp = NULL, *tm = *node_stack;

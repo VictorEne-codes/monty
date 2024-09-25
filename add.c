@@ -1,6 +1,6 @@
-#include <monty.h>
+#include "monty.h"
 
-/*
+/**
  * add - a function to add the top two numbers of the stack
  * @node_stack: input
  * @l_num: input

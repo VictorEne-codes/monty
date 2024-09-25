@@ -1,9 +1,13 @@
 #include "monty.h"
+
 /**
 * pop - entry point removes top of list
-* @node_stack: Doubly linked list
+* @node_stack: input
 * @l_num: input
+*
+* Return: void
 */
+
 void pop(stack_t **node_stack, unsigned int l_num)
 {
 	stack_t *tmp;

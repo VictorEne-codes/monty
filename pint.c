@@ -1,9 +1,13 @@
 #include "monty.h"
+
 /**
  * pint - entry point prints last node
- * @node_stack: Doubly linked list
+ * @node_stack: input
  * @l_num: input
+ *
+ * Return: void
  */
+
 void pint(stack_t **node_stack, unsigned int l_num)
 {
 	if (!*node_stack)
