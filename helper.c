@@ -44,16 +44,6 @@ instruction_t *create_instru()
 	p[5].opcode = "add", p[5].f = add;
 	p[6].opcode = "nop", p[6].f = NULL;
 	p[7].opcode = "sub", p[7].f = sub;
-	p[8].opcode = "div", p[8].f = divi;
-	p[9].opcode = "mul", p[9].f = mul;
-	p[10].opcode = "mod", p[10].f = mod;
-	p[11].opcode = "pchar", p[11].f = pchar;
-	p[12].opcode = "pstr", p[12].f = pstr;
-	p[13].opcode = "rotl", p[13].f = rotl;
-	p[14].opcode = "rotr", p[14].f = rotr;
-	p[15].opcode = "stack", p[15].f = stack;
-	p[16].opcode = "queue", p[16].f = queue;
-	p[17].opcode = NULL, p[17].f = NULL;
 
 	return (p);
 }
@@ -70,8 +60,8 @@ int call_funct(vars *var, char *c)
 {
 	int i;
 
-	for (i = 0; var->dict[i].c; i++)
-		if (strcmp(c, var->dict[i].c) == 0)
+	for (i = 0; var->dict[i].opcode; i++)
+		if (strcmp(c, var->dict[i].opcode) == 0)
 		{
 			if (!var->dict[i].f)
 				return (EXIT_SUCCESS);
